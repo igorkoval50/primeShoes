@@ -1,0 +1,23 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_head %}
+   {{ parent() }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+{% endblock %}
+
+
+ {% block base_script_hmr_mode %}
+     {{ parent() }}
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ {% endblock %}
+
+{% block base_header %}
+    <header class="header-main header-black">
+        {% block base_header_inner %}
+            <div class="container">
+                {% sw_include '@Storefront/storefront/layout/header/header.html.twig' %}
+            </div>
+        {% endblock %}
+    </header>
+{% endblock %}

@@ -1,0 +1,40 @@
+body {
+    overflow-x: hidden;
+}
+
+.header-main {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    z-index: 1000;
+    .container {
+        max-width: 1800px;
+    }
+    .header-logo-col {
+        margin: 6px 0 4px;
+        padding: 0;
+    }
+    .header-logo-main-link {
+        img {
+            height: 50px;
+        }
+    }
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-actions-btn {
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+.header-black {
+    background-color: $black;
+}
+
+.top-bar-nav, .nav-main, .header-search-col, .header-cart-total {
+    display: none;
+}

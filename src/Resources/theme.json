@@ -1,0 +1,21 @@
+{
+  "name": "PrimeShoes",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@PrimeShoes"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/prime-shoes.js"
+  ],
+  "asset": [
+    "app/storefront/src/assets"
+  ]
+}
