@@ -30,6 +30,12 @@ body {
             opacity: .7;
         }
     }
+    .btn {
+        padding: 2px 17px;
+    }
+    .header-actions-col {
+        padding-right: 0;
+    }
 }
 .header-black {
     background-color: $black;
@@ -37,4 +43,33 @@ body {
 
 .top-bar-nav, .nav-main, .header-search-col, .header-cart-total {
     display: none;
+}
+
+.btn-menu {
+    position: relative;
+    height: 40px;
+    width: 25px;
+    margin-left: 15px;
+    transition: all .3s;
+    &:before {
+        content: "";
+        background: url(../assets/icons/humburger.svg) no-repeat center;
+        height: 25px;
+        width: 25px;
+        display: block;
+        margin: 0 auto 40px;
+        background-size: contain;
+        position: absolute;
+        padding: initial;
+        top: 9px;
+        left: 0;
+        transition: all .3s;
+    }
+}
+
+.btn-menu.is--active {
+    &:before {
+        background: url(../assets/icons/header-close.svg) no-repeat center;
+        background-size: 21px;
+    }
 }
