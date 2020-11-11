@@ -1,11 +1,10 @@
+@import 'vendor/color';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'vendor/fonts';
 
 @import 'page/home';
 @import 'page/look';
-
-@import 'vendor/fonts';
-@import 'vendor/color';
 
 //@media screen and(min-width: 36em) {} 576
 //@media screen and(min-width: 48em) {} 768
