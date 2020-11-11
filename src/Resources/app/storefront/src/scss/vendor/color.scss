@@ -1,3 +1,44 @@
 $black: #000;
 $white: #fff;
 $white_darker: #f4f0e9;
+
+
+@mixin btn-black {
+  border: 1px solid #000;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  padding: 0px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  height: 40px;
+  line-height: 38px;
+  transition: 0.3s;
+  outline: 0px;
+  margin: 10px 0px 0px;
+  &:hover {
+    color: #ffffff;
+    background: #000000;
+  }
+}
+
+@mixin btn-white {
+  border: 1px solid $white;
+  color: $white;
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  padding: 0px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  height: 40px;
+  line-height: 38px;
+  transition: 0.3s;
+  outline: 0px;
+  margin: 10px 0px 0px;
+  &:hover {
+    color: $black;
+    background: $white;
+  }
+}

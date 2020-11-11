@@ -1,24 +1,11 @@
-@import 'vendor/color';
 @import 'layout/header';
 @import 'layout/footer';
-//@import 'layout/cookie-permission';
-//@import 'layout/confetti';
-//@import 'layout/product-table';
-//@import 'layout/register-hotline';
-//@import 'layout/offcanvas';
-//
-@import 'vendor/fonts';
 
 @import 'page/home';
 @import 'page/look';
-//@import 'page/listing';
-//@import 'page/detail';
-//@import 'page/infopage';
-//@import 'page/bestellinfo';
-//@import 'page/stories';
-//@import 'page/contacts';
-//@import 'page/aboutus';
-//@import 'page/checkout';
+
+@import 'vendor/fonts';
+@import 'vendor/color';
 
 //@media screen and(min-width: 36em) {} 576
 //@media screen and(min-width: 48em) {} 768
