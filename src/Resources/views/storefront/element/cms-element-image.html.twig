@@ -34,7 +34,12 @@
                     {% endset %}
 
                     {% if element.translated.config.url.value %}
-                        <a href="{{ element.translated.config.url.value }}"
+                        <a {% for link in page.cmsPage.sections.elements %}
+                            {% if link.cssClass == "making-four-image" %}
+                                data-fancybox="gallery"
+                            {% endif %}
+                        {% endfor %}
+                                href="{{ element.translated.config.url.value }}"
                            class="cms-image-link"
                            {% if element.translated.config.newTab.value %}target="_blank" rel="noopener"{% endif %}>
                             {{ imageElement }}
