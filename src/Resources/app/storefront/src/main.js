@@ -1,14 +1,17 @@
 $(document).ready(function () {
     //stick header in home page if height of the slider
-    let heightSlider = $('.home-slider-first').height() - 20;
     if($('body').hasClass('is-act-home')) {
-        $(window).on('scroll', function() {
-            var fromTop = $(window).scrollTop();
-            if (fromTop > heightSlider) {
+        var $win = $(window);
+        var winH = $win.height() - 20;   // Get the window height.
+
+        $win.on("scroll", function () {
+            if ($(this).scrollTop() > winH ) {
                 $('.header-main').addClass('header-black');
             } else {
                 $('.header-main').removeClass('header-black');
             }
+        }).on("resize", function(){
+            winH = $(this).height();
         });
     }
 
