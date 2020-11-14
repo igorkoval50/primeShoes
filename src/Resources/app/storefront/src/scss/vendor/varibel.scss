@@ -33,12 +33,23 @@ $white_darker: #f4f0e9;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   height: 40px;
-  line-height: 38px;
+  line-height: 40px;
   transition: 0.3s;
   outline: 0px;
   margin: 10px 0px 0px;
   &:hover {
     color: $black;
     background: $white;
+  }
+}
+
+@mixin btn-white-home {
+  @include btn-white;
+  font-size: 14px;
+  padding: 0px 30px;
+  height: 45px;
+  line-height: 45px;
+  @media (max-width: 480px) {
+    @include btn-white;
   }
 }

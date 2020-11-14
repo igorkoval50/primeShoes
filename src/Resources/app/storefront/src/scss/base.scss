@@ -1,7 +1,11 @@
-@import 'vendor/color';
+@import 'vendor/varibel';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'vendor/fonts';
+
+@import 'element/slider';
+@import 'element/banner-full';
+@import 'element/image-right-text';
 
 @import 'page/home';
 @import 'page/look';

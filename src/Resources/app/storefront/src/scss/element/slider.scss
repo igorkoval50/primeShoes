@@ -1,0 +1,135 @@
+.cms-block-slider-image-text {
+  overflow: hidden;
+  position: relative;
+
+  .base-slider-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+
+    .image-slider-controls-prev, .base-slider-controls-next {
+      left: 0;
+      bottom: 0px;
+      font-size: 0px;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 1);
+      border: 0px;
+      background-size: 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+      outline: 0px;
+      z-index: 1;
+      transition: 0.3s;
+      border-radius: 0;
+
+      .icon {
+        color: #2D2C2C;
+      }
+    }
+
+    .image-slider-controls-prev {
+      left: -40px;
+    }
+  }
+
+  .wrapper-image-text {
+    position: absolute;
+    left: 60px;
+    max-width: 350px;
+    bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h1, h2 {
+      font-size: 32px;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      position: relative;
+      &:after {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background: #ffffff;
+        display: block;
+        bottom: -20px;
+        position: absolute;
+      }
+    }
+    .btn {
+      @include btn-white-home;
+    }
+    p:nth-child(2) {
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 30px 0px 25px;
+      text-align: left;
+    }
+    @media (max-width: 480px) {
+      left: 20px;
+      p:nth-child(2) {
+        font-size: 12px;
+      }
+      h1, h2 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .tns-ovh, .image-slider-item {
+      min-height: 600px;
+
+      img {
+        min-height: 600px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cms-block-slider-image-text {
+      .tns-ovh, .image-slider-item {
+        max-height: 600px;
+        img {
+          max-height: 600px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .base-slider-controls {
+      position: absolute;
+      bottom: 20px;
+      right: 80px;
+    }
+  }
+
+  .tns-ovh, .image-slider-item {
+    max-height: 100vh;
+    height: auto !important;
+
+    img {
+      max-height: 100vh;
+      object-fit: cover;
+    }
+  }
+  .col-12 {
+    padding: 0;
+  }
+}
+
+.text-center {
+  .cms-block-slider-image-text {
+    .wrapper-image-text {
+      bottom: 50%;
+      transform: translate(0, 50%);
+    }
+  }
+}
+
+
