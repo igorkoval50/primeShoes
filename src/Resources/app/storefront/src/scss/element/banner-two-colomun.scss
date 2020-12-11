@@ -1,0 +1,22 @@
+.banner-two-colomun {
+    position: relative;
+    .text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        .btn {
+            background: #fff;
+            color: #333;
+        }
+        p {
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        .cms-element-text {
+            text-align: center;
+        }
+    }
+}
